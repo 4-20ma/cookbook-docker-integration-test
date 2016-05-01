@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe 'test::default' do
+describe 'docker-integration-test::default' do
   #-------------------------------------------- file[/tmp/quick_brown_fox.txt]
   describe file('/tmp/quick_brown_fox.txt') do
     it 'is a file' do

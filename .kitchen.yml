@@ -11,6 +11,6 @@ platforms:
     require_chef_omnibus: true
 
 suites:
-- name: test
+- name: docker-integration-test
   run_list:
-    - 'recipe[test]'
+    - 'recipe[docker-integration-test]'

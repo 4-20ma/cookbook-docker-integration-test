@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe 'test::default' do
+describe 'docker-integration-test::default' do
   [
     { :platform => 'centos', :version => '6.5' }
   ].each do |i|

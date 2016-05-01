@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Cookbook Name:: test
+# Cookbook Name:: docker-integration-test
 # Recipe:: default
 #
 # Author:: Doc Walker (<4-20ma@wvfans.net>)

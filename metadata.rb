@@ -1,8 +1,8 @@
 # encoding: utf-8
-name              'test'
+name              'docker-integration-test'
 maintainer        'Doc Walker'
 maintainer_email  '4-20ma@wvfans.net'
-description       'Tests chef + docker.'
+description       'Tests chef cookbook using docker for integration tests.'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 license           'Apache 2.0'
 version           '0.1.0'
@@ -11,7 +11,7 @@ source_url        nil if respond_to?(:source_url)
 
 #--------------------------------------------------------------------- recipes
 recipe            'default',
-                  'Recipe used to test chef + docker'
+                  'Tests chef cookbook using docker for integration tests.'
 
 #------------------------------------------------------- cookbook dependencies
 

@@ -1,0 +1,16 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+platforms:
+- name: centos
+  driver_config:
+    image: 420ma/centos-chef
+    platform: centos
+    require_chef_omnibus: true
+
+suites:
+- name: test
+  run_list:
+    - 'recipe[test]'

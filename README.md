@@ -1,5 +1,13 @@
 Cookbook - docker-integration-test
 ==================================
+[![Chef cookbook](https://img.shields.io/cookbook/v/docker-integration-test.svg?style=flat)][cookbook]
+[![Travis](https://img.shields.io/travis/4-20ma/cookbook-docker-integration-test.svg?style=flat)][travis]
+[![Gemnasium](http://img.shields.io/gemnasium/4-20ma/cookbook-docker-integration-test.svg?style=flat)][gemnasium]
+
+[cookbook]:   https://supermarket.chef.io/cookbooks/docker-integration-test
+[travis]:     https://travis-ci.org/4-20ma/cookbook-docker-integration-test
+[gemnasium]:  https://gemnasium.com/4-20ma/cookbook-docker-integration-test
+
 
 Configuration
 -------------

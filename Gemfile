@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 group :development do
+  gem 'emeril', '~> 0.8.0'
   gem 'rake'
 end # group
 

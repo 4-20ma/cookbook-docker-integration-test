@@ -1,4 +1,5 @@
 # encoding: utf-8
+# rubocop:disable Metrics/LineLength
 name              'docker-integration-test'
 maintainer        'Doc Walker'
 maintainer_email  '4-20ma@wvfans.net'
@@ -6,8 +7,8 @@ description       'Tests chef cookbook using docker for integration tests.'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 license           'Apache 2.0'
 version           '0.1.0'
-issues_url        nil if respond_to?(:issues_url)
-source_url        nil if respond_to?(:source_url)
+issues_url        'https://github.com/4-20ma/cookbook-docker-integration-test/issues' if respond_to?(:issues_url)
+source_url        'https://github.com/4-20ma/cookbook-docker-integration-test' if respond_to?(:source_url)
 
 #--------------------------------------------------------------------- recipes
 recipe            'default',
@@ -28,3 +29,5 @@ supports          'scientific'
 # platform_family?('debian'): not tested, but may work
 supports          'debian'
 supports          'ubuntu'
+
+# rubocop:enable Metrics/LineLength

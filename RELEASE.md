@@ -36,7 +36,7 @@ Instructions for releasing this cookbook:
 
 - Switch `knife.rb` configuration
 
-        $ chefvm use 0
+        $ chefvm use chef.io
 
 - Release cookbook
 

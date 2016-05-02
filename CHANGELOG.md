@@ -1,3 +1,8 @@
+1.0.1 / 2016-05-01
+------------------
+
+- `FIX` - Update RELEASE with new chefvm configuration | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/3499d3f)
+
 1.0.0 / 2016-05-01
 ------------------
 

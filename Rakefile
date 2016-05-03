@@ -101,7 +101,7 @@ begin
     t.config[:logger].level = :debug
 
     # set a category for this cookbook
-    t.config[:category] = 'Package Management'
+    t.config[:category] = 'Example'
 
     # explicitly indicate whether to publish to chef supermarket
     t.config[:publish_to_supermarket] = true

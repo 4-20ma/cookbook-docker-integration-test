@@ -14,6 +14,6 @@ group :test do
 end # group
 
 group :integration do
-  gem 'test-kitchen', '~> 1.7.3'
-  gem 'kitchen-docker', '~> 2.3.0'
+  gem 'test-kitchen', '~> 1.8.0'
+  gem 'kitchen-docker', '~> 2.4.0'
 end # group

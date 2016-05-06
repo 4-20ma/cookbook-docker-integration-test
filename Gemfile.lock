@@ -109,7 +109,7 @@ GEM
     httpclient (2.7.2)
     ipaddress (0.8.3)
     json (1.8.3)
-    kitchen-docker (2.3.0)
+    kitchen-docker (2.4.0)
       test-kitchen (>= 1.0.0)
     libyajl2 (1.2.0)
     mini_portile2 (2.0.0)
@@ -235,7 +235,7 @@ GEM
       sfl
     syslog-logger (1.6.8)
     systemu (2.6.5)
-    test-kitchen (1.7.3)
+    test-kitchen (1.8.0)
       mixlib-install (~> 1.0, >= 1.0.4)
       mixlib-shellout (>= 1.2, < 3.0)
       net-scp (~> 1.1)
@@ -263,10 +263,10 @@ DEPENDENCIES
   chefspec (~> 4.6.1)
   emeril (~> 0.8.0)
   foodcritic (~> 6.2.0)
-  kitchen-docker (~> 2.3.0)
+  kitchen-docker (~> 2.4.0)
   rake
   rubocop (~> 0.39.0)
-  test-kitchen (~> 1.7.3)
+  test-kitchen (~> 1.8.0)
 
 BUNDLED WITH
    1.12.1

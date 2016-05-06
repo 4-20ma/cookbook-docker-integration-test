@@ -167,7 +167,7 @@ GEM
     proxifier (1.0.3)
     rack (1.6.4)
     rainbow (2.1.0)
-    rake (10.4.2)
+    rake (11.1.2)
     retryable (2.0.3)
     ridley (4.5.0)
       addressable
@@ -264,7 +264,7 @@ DEPENDENCIES
   emeril (~> 0.8.0)
   foodcritic (~> 6.2.0)
   kitchen-docker (~> 2.4.0)
-  rake
+  rake (~> 11.1.2)
   rubocop (~> 0.39.0)
   test-kitchen (~> 1.8.0)
 

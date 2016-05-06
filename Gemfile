@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 group :development do
   gem 'emeril', '~> 0.8.0'
-  gem 'rake'
+  gem 'rake', '~> 11.1.2'
 end # group
 
 group :test do

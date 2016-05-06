@@ -27,6 +27,7 @@ Metrics/AbcSize:
 Metrics/LineLength:
   Exclude:
     - 'metadata.rb'
+    - 'tasks/style.rb'
 
 Style/EmptyLinesAroundBlockBody:
   Enabled: false

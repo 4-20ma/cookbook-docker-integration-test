@@ -24,5 +24,9 @@ Lint/UnusedBlockArgument:
 Metrics/AbcSize:
   Max: 19
 
+Metrics/LineLength:
+  Exclude:
+    - 'metadata.rb'
+
 Style/EmptyLinesAroundBlockBody:
   Enabled: false

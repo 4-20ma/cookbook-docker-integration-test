@@ -1,5 +1,4 @@
 # encoding: utf-8
-# rubocop:disable Metrics/LineLength
 name              'docker-integration-test'
 maintainer        'Doc Walker'
 maintainer_email  '4-20ma@wvfans.net'
@@ -29,5 +28,3 @@ supports          'scientific'
 # platform_family?('debian'): not tested, but may work
 supports          'debian'
 supports          'ubuntu'
-
-# rubocop:enable Metrics/LineLength

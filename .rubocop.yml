@@ -12,13 +12,13 @@ AllCops:
 EmptyLines:
   Enabled: false
 
-HashSyntax:
+Style/HashSyntax:
   EnforcedStyle: hash_rockets
 
-SpaceBeforeFirstArg:
+Style/SpaceBeforeFirstArg:
   Enabled: false
 
-UnusedBlockArgument:
+Lint/UnusedBlockArgument:
   Enabled: false
 
 Metrics/AbcSize:

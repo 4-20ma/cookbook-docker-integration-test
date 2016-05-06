@@ -3,7 +3,7 @@ name              'docker-integration-test'
 maintainer        'Doc Walker'
 maintainer_email  '4-20ma@wvfans.net'
 description       'Tests chef cookbook using docker for integration tests.'
-long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+long_description  IO.read(File.join(__dir__, 'README.md'))
 license           'Apache 2.0'
 version           '1.0.1'
 issues_url        'https://github.com/4-20ma/cookbook-docker-integration-test/issues' if respond_to?(:issues_url)

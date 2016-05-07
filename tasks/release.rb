@@ -23,16 +23,17 @@ require 'rake'
 
 #-------------------------------------------------------------- release/tagger
 begin
+  release = @config.fetch('release')
   require 'emeril/rake_tasks'
   Emeril::RakeTasks.new do |t|
     # turn on debug logging
     t.config[:logger].level = :debug
 
     # set a category for this cookbook
-    t.config[:category] = 'Example'
+    t.config[:category] = release['category']
 
     # explicitly indicate whether to publish to chef supermarket
-    t.config[:publish_to_supermarket] = true
+    t.config[:publish_to_supermarket] = release['publish_to_supermarket']
   end
 rescue LoadError, NameError
   STDOUT.puts '[WARN] Emeril::RakeTasks not loaded'

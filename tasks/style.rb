@@ -40,13 +40,14 @@ namespace :style do
 
   begin
     require 'foodcritic'
+    foodcritic = @config.fetch('style').fetch('foodcritic')
     desc 'Run Chef style checks'
     FoodCritic::Rake::LintTask.new(:chef) do |t|
       # exclude tags by using ~FC002 notation within :tags array
       t.options = {
-        :fail_tags => %w(any),
-        :include_rules => ['spec/foodcritic'],
-        :tags => %w()
+        :fail_tags => foodcritic['fail_tags'],
+        :include_rules => foodcritic['include_rules'],
+        :tags => foodcritic['tags']
       }
     end # task
   rescue LoadError, NameError

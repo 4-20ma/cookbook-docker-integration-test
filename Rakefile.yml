@@ -1,0 +1,16 @@
+---
+changelog:
+  git_repository: github.com/4-20ma
+
+release:
+  category: Example
+  publish_to_supermarket: true
+
+style:
+  foodcritic:
+    fail_tags:
+      - any
+    include_rules:
+      - 'spec/foodcritic'
+    # exclude tags by using ~FC002 notation within :tags array
+    tags: []

@@ -12,7 +12,7 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=docker-integration-test-centos-6.6
+  - INSTANCE=docker-integration-test-centos-66
 
 # Don't `bundle install`
 install: echo "skip bundle install"

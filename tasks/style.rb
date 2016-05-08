@@ -35,7 +35,7 @@ namespace :style do
       # t.fail_on_error = true
     end # task
   rescue LoadError, NameError
-    STDOUT.puts '[WARN] RuboCop::RakeTask not loaded'
+    STDOUT.puts '[WARN] RuboCop::RakeTask not loaded'.yellow
   end
 
   begin
@@ -51,7 +51,7 @@ namespace :style do
       }
     end # task
   rescue LoadError, NameError
-    STDOUT.puts '[WARN] FoodCritic::Rake::LintTask not loaded'
+    STDOUT.puts '[WARN] FoodCritic::Rake::LintTask not loaded'.yellow
   end
 
   namespace :chef do

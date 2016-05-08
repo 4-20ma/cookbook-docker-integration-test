@@ -29,7 +29,7 @@ begin
   desc 'Run all test instances'
   task :kitchen => ['kitchen:all']
 rescue LoadError, NameError
-  STDOUT.puts '[WARN] Kitchen::RakeTasks not loaded'
+  STDOUT.puts '[WARN] Kitchen::RakeTasks not loaded'.yellow
 end
 
 # TODO: from sudo cookboook:

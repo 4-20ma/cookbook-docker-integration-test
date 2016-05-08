@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Task:: release
+# Class:: string
 #
 # Author:: Doc Walker (<4-20ma@wvfans.net>)
 #
@@ -19,22 +19,34 @@
 # limitations under the License.
 #
 
-require 'rake'
+# https://stackoverflow.com/questions/1489183/colorized-ruby-output
+class String
+  # colorization
+  def colorize(color_code)
+    "\e[#{color_code}m#{self}\e[0m"
+  end # def
 
-#-------------------------------------------------------------- release/tagger
-begin
-  release = @config.fetch('release')
-  require 'emeril/rake_tasks'
-  Emeril::RakeTasks.new do |t|
-    # turn on debug logging
-    t.config[:logger].level = :debug
+  def red
+    colorize(31)
+  end # def
 
-    # set a category for this cookbook
-    t.config[:category] = release['category']
+  def green
+    colorize(32)
+  end # def
 
-    # explicitly indicate whether to publish to chef supermarket
-    t.config[:publish_to_supermarket] = release['publish_to_supermarket']
-  end
-rescue LoadError, NameError
-  STDOUT.puts '[WARN] Emeril::RakeTasks not loaded'.yellow
-end
+  def yellow
+    colorize(33)
+  end # def
+
+  def blue
+    colorize(34)
+  end # def
+
+  def pink
+    colorize(35)
+  end # def
+
+  def cyan
+    colorize(36)
+  end # def
+end # class

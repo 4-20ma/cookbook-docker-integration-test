@@ -26,7 +26,7 @@ require 'rake'
 # - $ git submodule add git://github.com/etsy/foodcritic-rules.git spec/foodcritic/etsy
 
 #----------------------------------------------------------------------- style
-# Style tests. Rubocop and Foodcritic
+# Style tests. Rubocop, Foodcritic, and Travis
 namespace :style do
   begin
     require 'rubocop/rake_task'
@@ -60,7 +60,17 @@ namespace :style do
       sh 'git submodule update --init --recursive'
     end # task
   end # namespace
+
+  begin
+    require 'travis'
+    desc 'Run lint checks on .travis.yml'
+    task :travis do
+      sh 'bundle exec travis lint -x'
+    end # task
+  rescue LoadError, NameError
+    STDOUT.puts '[WARN] Travis gem not loaded'.yellow
+  end
 end # namespace
 
 desc 'Run all style checks'
-task :style => ['style:chef', 'style:ruby']
+task :style => ['style:chef', 'style:ruby', 'style:travis']

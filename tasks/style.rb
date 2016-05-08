@@ -73,4 +73,4 @@ namespace :style do
 end # namespace
 
 desc 'Run all style checks'
-task :style => ['style:chef', 'style:ruby', 'style:travis']
+task :style => ['style:chef', 'style:ruby']

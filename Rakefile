@@ -17,4 +17,4 @@ desc 'Run all tests on Travis'
 task :travis => ['style', 'spec', 'integration:cloud']
 
 # Default
-task :default => %w(style spec)
+task :default => ['style', 'style:travis', 'spec']

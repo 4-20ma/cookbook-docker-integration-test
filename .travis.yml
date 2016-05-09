@@ -15,7 +15,8 @@ env:
   - INSTANCE=docker-integration-test-centos-66
 
 # Don't `bundle install`
-install: echo "skip bundle install"
+# install: echo "skip bundle install"
+bundler_args: --without development
 
 # Ensure we make ChefDK's Ruby the default
 before_script:

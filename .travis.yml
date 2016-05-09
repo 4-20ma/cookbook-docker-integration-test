@@ -16,7 +16,7 @@ env:
 
 # Don't `bundle install`
 # install: echo "skip bundle install"
-bundler_args: --without development
+# bundler_args: --without development
 
 # Ensure we make ChefDK's Ruby the default
 before_script:

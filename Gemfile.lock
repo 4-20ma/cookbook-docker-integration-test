@@ -5,7 +5,7 @@ GEM
     artifactory (2.3.2)
     ast (2.2.0)
     backports (3.6.8)
-    berkshelf (4.3.2)
+    berkshelf (4.3.3)
       addressable (~> 2.3, >= 2.3.4)
       berkshelf-api-client (~> 2.0, >= 2.0.2)
       buff-config (~> 1.0)
@@ -117,7 +117,7 @@ GEM
     gherkin (3.2.0)
     hashie (3.4.4)
     highline (1.7.8)
-    hitimes (1.2.3)
+    hitimes (1.2.4)
     httpclient (2.7.2)
     ipaddress (0.8.3)
     json (1.8.3)
@@ -290,7 +290,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  berkshelf (~> 4.3.2)
+  berkshelf (~> 4.3.3)
   chefspec (~> 4.6.1)
   emeril (~> 0.8.0)
   foodcritic (~> 6.2.0)

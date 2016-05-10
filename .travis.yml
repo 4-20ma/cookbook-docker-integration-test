@@ -12,8 +12,8 @@ env:
   global:
     - KITCHEN_YAML=.kitchen.travis.yml
   matrix:
-    - PLATFORM=centos-6
-    - PLATFORM=centos-7
+    - KITCHEN_PLATFORM=centos-6
+    - KITCHEN_PLATFORM=centos-7
 
 script:
   - travis_retry bundle exec rake travis

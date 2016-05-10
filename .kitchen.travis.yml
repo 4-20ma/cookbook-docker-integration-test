@@ -4,7 +4,7 @@ driver:
   privileged: true
 
 platforms:
-  - name: <%= ENV['PLATFORM'] || centos-6 %>
+  - name: <%= ENV['KITCHEN_PLATFORM'] || centos-6 %>
 
 suites:
   - name: docker-integration-test

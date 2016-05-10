@@ -14,8 +14,8 @@ addons:
 services:
   - docker
 
-before_install:
-  - git submodule update --init --recursive
+# before_install:
+#   - git submodule update --init --recursive
 
 bundler_args: --without development
 

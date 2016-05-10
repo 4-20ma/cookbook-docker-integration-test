@@ -16,7 +16,7 @@ services:
 
 before_install:
   - git submodule update --init --recursive
-bundler_args: --without development
+# bundler_args: --without development
 # before_install:
 #   - docker pull centos/centos-6
 
@@ -25,7 +25,7 @@ bundler_args: --without development
 #   - INSTANCE=docker-integration-test-centos-66
 
 # Don't `bundle install`
-# install: echo "skip bundle install"
+install: echo "skip bundle install"
 # bundler_args: --without production
 
 # Ensure we make ChefDK's Ruby the default
@@ -34,7 +34,7 @@ before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
   # - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
-  # - bundle install
+  - bundle install --without development
 script:
   - travis_retry bundle exec rake integration:docker
   # - /opt/chefdk/embedded/bin/rake integration:docker

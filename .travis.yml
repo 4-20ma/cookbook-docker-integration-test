@@ -34,7 +34,7 @@ before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
   # - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
-  - bundle install
+  # - bundle install
 script:
   - travis_retry bundle exec rake integration:docker
   # - /opt/chefdk/embedded/bin/rake integration:docker

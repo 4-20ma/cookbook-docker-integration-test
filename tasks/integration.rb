@@ -43,7 +43,7 @@ namespace :integration do
   end
 end
 
-task :integration => %w(integration:local)
+task :integration => %w(integration:docker)
 
 # where
 # integration:cloud

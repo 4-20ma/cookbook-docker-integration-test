@@ -1,6 +1,7 @@
 sudo: required
 
 language: ruby
+cache: bundler
 
 # install the pre-release chef-dk.  Use chef-stable-precise to install the stable release
 addons:
@@ -13,16 +14,19 @@ addons:
 services:
   - docker
 
+before_install:
+  - git submodule update --init --recursive
+bundler_args: --without development
 # before_install:
 #   - docker pull centos/centos-6
 
-env:
-  matrix:
-  - INSTANCE=docker-integration-test-centos-66
+# env:
+#   matrix:
+#   - INSTANCE=docker-integration-test-centos-66
 
 # Don't `bundle install`
 # install: echo "skip bundle install"
-bundler_args: --without production
+# bundler_args: --without production
 
 # Ensure we make ChefDK's Ruby the default
 before_script:

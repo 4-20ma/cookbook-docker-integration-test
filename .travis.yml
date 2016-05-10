@@ -9,5 +9,5 @@ cache: bundler
 bundler_args: --without development
 
 script:
-  - export KITCHEN_YAML=.kitchen.docker.yml
+  - export KITCHEN_YAML=.kitchen.travis.yml
   - travis_retry bundle exec rake travis

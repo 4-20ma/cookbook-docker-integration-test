@@ -1,22 +1,11 @@
 sudo: required
 
-language: ruby
-cache: bundler
-
-# # install the pre-release chef-dk.  Use chef-stable-precise to install the stable release
-# addons:
-#   apt:
-#     sources:
-#       - chef-current-precise
-#     packages:
-#       # - chefdk
-
 services:
   - docker
 
-# before_install:
-#   - git submodule update --init --recursive
+language: ruby
 
+cache: bundler
 bundler_args: --without development
 
 script:

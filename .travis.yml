@@ -1,7 +1,12 @@
-before_install:
-  - git submodule update --init --recursive
-bundler_args: --without development:integration
+sudo: required
+
+services:
+  - docker
+
 language: ruby
-rvm:
-  - 2.3.1
-script: bundle exec rake travis
+
+cache: bundler
+bundler_args: --without development
+
+script:
+  - travis_retry bundle exec rake travis

@@ -22,7 +22,6 @@
 require 'rake'
 
 #----------------------------------------------------------- integration tests
-# Integration tests. Kitchen.ci
 namespace :integration do
   begin
     require 'kitchen'
@@ -44,13 +43,3 @@ namespace :integration do
 end
 
 task :integration => %w(integration:docker)
-
-# where
-# integration:cloud
-# integration:local
-# integration:travis
-
-# how
-# integration:docker
-# integration:vagrant
-# integration:parallels

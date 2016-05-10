@@ -22,8 +22,6 @@
 require 'rake'
 
 #------------------------------------------------------------------ unit tests
-# TODO: from sudo cookbook
-# Rspec and ChefSpec
 desc 'Run ChefSpec examples'
 # task :chefspec => [:spec]
 RSpec::Core::RakeTask.new(:spec) do |t|

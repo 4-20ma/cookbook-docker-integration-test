@@ -9,7 +9,7 @@ addons:
     sources:
       - chef-current-precise
     packages:
-      # - chefdk
+      - chefdk
 
 services:
   - docker

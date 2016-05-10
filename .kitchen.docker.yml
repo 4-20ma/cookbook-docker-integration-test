@@ -4,8 +4,8 @@ driver:
   privileged: true
 
 platforms:
-  - name: centos-6.6
-    run_list: 'recipe[docker-integration-test]'
+  - name: centos-6
+  # - name: centos-7
 
 suites:
   - name: docker-integration-test

@@ -8,5 +8,8 @@ language: ruby
 cache: bundler
 bundler_args: --without development
 
+env:
+  KITCHEN_LOCAL_CONFIG: .kitchen.docker.yml
+
 script:
   - travis_retry bundle exec rake travis

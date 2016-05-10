@@ -9,4 +9,4 @@ cache: bundler
 bundler_args: --without development
 
 script:
-  - travis_retry bundle exec rake integration:docker
+  - travis_retry bundle exec rake travis

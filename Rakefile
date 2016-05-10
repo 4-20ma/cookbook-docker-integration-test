@@ -14,8 +14,7 @@ Dir.glob(File.join(__dir__, 'tasks', '**', '*.rb'), &method(:require))
 
 #----------------------------------------------------------------------- tasks
 desc 'Run all tests on Travis'
-task :travis => ['style', 'spec', 'integration:docker']
-# task :travis => %w(style spec)
+task :travis => %w(style spec integration:docker)
 
 # Default
-task :default => ['style', 'style:travis', 'spec']
+task :default => %w(style spec)

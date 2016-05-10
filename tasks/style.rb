@@ -69,8 +69,9 @@ namespace :style do
     end # task
   rescue LoadError, NameError
     STDOUT.puts '[WARN] Travis gem not loaded'.yellow
+    task :travis
   end
 end # namespace
 
 desc 'Run all style checks'
-task :style => ['style:chef', 'style:ruby']
+task :style => ['style:chef', 'style:ruby', 'style:travis']

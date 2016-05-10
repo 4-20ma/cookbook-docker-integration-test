@@ -22,17 +22,6 @@
 require 'rake'
 
 #----------------------------------------------------------- integration tests
-# begin
-#   require 'kitchen/rake_tasks'
-#   Kitchen::RakeTasks.new
-#
-#   desc 'Run all test instances'
-#   task :kitchen => ['kitchen:all']
-# rescue LoadError, NameError
-#   STDOUT.puts '[WARN] Kitchen::RakeTasks not loaded'.yellow
-# end
-#
-
 # # TODO: from sudo cookboook:
 # Integration tests. Kitchen.ci
 namespace :integration do
@@ -42,10 +31,12 @@ namespace :integration do
     desc 'Run Test Kitchen integration tests with Docker'
     task :docker do
       Kitchen.logger = Kitchen.default_file_logger
-      # loader_config = { :local_config => '.kitchen.docker.yml' }
-      # config = { :loader => Kitchen::Loader::YAML.new(loader_config) }
-      # Kitchen::Config.new(config).instances.each do |instance|
-      Kitchen::Config.new.instances.each do |instance|
+      # loader_config = { :project_config => ENV["KITCHEN_YAML"] }
+      config = {
+        :loader => Kitchen::Loader::YAML.new(:project_config =>
+        ENV['KITCHEN_YAML'] || '.kitchen.local.yml')
+      }
+      Kitchen::Config.new(config).instances.each do |instance|
         instance.test(:always)
       end
     end # task

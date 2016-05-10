@@ -71,7 +71,8 @@ Ensure kitchen is able to converge the cookbook (first run only):
 
 Run tests:
 
-    $ bundle exec kitchen test
+    $ bundle exec rake
+    $ bundle exec rake integration
 
 
 License & Authors

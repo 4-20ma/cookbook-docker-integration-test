@@ -8,9 +8,7 @@ language: ruby
 cache: bundler
 bundler_args: --without development
 
-env:
-  - KITCHEN_YAML: .kitchen.docker.yml
-  - KITCHEN_LOCAL_YAML: .kitchen.docker.yml
-
 script:
+  - export KITCHEN_YAML=.kitchen.docker.yml
+  - export KITCHEN_LOCAL_YAML=.kitchen.docker.yml
   - travis_retry bundle exec rake travis

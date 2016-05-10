@@ -1,5 +1,7 @@
 sudo: required
 
+language: ruby
+
 # install the pre-release chef-dk.  Use chef-stable-precise to install the stable release
 addons:
   apt:
@@ -8,7 +10,11 @@ addons:
     packages:
       - chefdk
 
-services: docker
+services:
+  - docker
+
+# before_install:
+#   - docker pull centos/centos-6
 
 env:
   matrix:
@@ -24,6 +30,7 @@ before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
   # - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
+  - bundle install
 script:
   - travis_retry bundle exec rake integration:docker
   # - /opt/chefdk/embedded/bin/rake integration:docker

@@ -29,11 +29,12 @@ namespace :integration do
     desc 'Run Test Kitchen integration tests with Docker'
     task :docker do
       Kitchen.logger = Kitchen.default_file_logger
-      config = {
+      options = {
         :loader => Kitchen::Loader::YAML.new(:project_config =>
-          ENV['KITCHEN_YAML'] || '.kitchen.local.yml')
+          ENV['KITCHEN_YAML'] || '.kitchen.local.yml'),
+        :test_base_path => File.join(Dir.pwd, 'spec', 'integration')
       }
-      Kitchen::Config.new(config).instances.each do |instance|
+      Kitchen::Config.new(options).instances.each do |instance|
         instance.test(:always)
       end
     end # task

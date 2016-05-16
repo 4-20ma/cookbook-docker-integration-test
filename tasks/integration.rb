@@ -27,20 +27,23 @@ namespace :integration do
     require 'kitchen'
 
     desc 'Run Test Kitchen integration tests with Docker'
-    task :docker do
+    task :docker, :regex do |t, args|
+      args.with_defaults(:regex => '.')
+      regex = Regexp.new(args['regex'].to_s.tr('_', '-'))
       Kitchen.logger = Kitchen.default_file_logger
       options = {
         :loader => Kitchen::Loader::YAML.new(:project_config =>
           ENV['KITCHEN_YAML'] || '.kitchen.local.yml'),
         :test_base_path => File.join(Dir.pwd, 'spec', 'integration')
       }
-      Kitchen::Config.new(options).instances.each do |instance|
+      instances = Kitchen::Config.new(options).instances
+      instances.get_all(regex).each do |instance|
         instance.test(:always)
-      end
+      end # instances
     end # task
   rescue LoadError, NameError
     STDOUT.puts '[WARN] Kitchen::RakeTasks not loaded'.yellow
   end
-end
+end # namespace
 
 task :integration => %w(integration:docker)

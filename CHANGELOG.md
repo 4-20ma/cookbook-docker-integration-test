@@ -1,3 +1,8 @@
+1.1.1 / 2016-05-16
+------------------
+
+- `FIX` - Fix chef supermarket category | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/f9d28d1)
+
 1.1.0 / 2016-05-16
 ------------------
 

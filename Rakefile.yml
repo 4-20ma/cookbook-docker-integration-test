@@ -3,7 +3,7 @@ changelog:
   git_repository: github.com/4-20ma
 
 release:
-  category: Example
+  category: Other
   publish_to_supermarket: true
 
 style:

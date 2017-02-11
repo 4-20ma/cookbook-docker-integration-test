@@ -87,15 +87,15 @@ GEM
     emeril (0.8.0)
       chef (> 0.10.10)
     erubis (2.7.0)
-    ethon (0.9.0)
+    ethon (0.10.1)
       ffi (>= 1.3.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.10.0)
-      faraday (>= 0.7.4, < 0.10)
+    faraday_middleware (0.11.0.1)
+      faraday (>= 0.7.4, < 1.0)
     fauxhai (3.4.0)
       net-ssh
-    ffi (1.9.10)
+    ffi (1.9.17)
     ffi-yajl (2.2.3)
       libyajl2 (~> 1.2)
     foodcritic (6.3.0)
@@ -107,12 +107,12 @@ GEM
       treetop (~> 1.4)
       yajl-ruby (~> 1.1)
     fuzzyurl (0.8.0)
-    gh (0.14.0)
-      addressable
+    gh (0.15.0)
+      addressable (~> 2.4.0)
       backports
       faraday (~> 0.8)
       multi_json (~> 1.0)
-      net-http-persistent (>= 2.7)
+      net-http-persistent (~> 2.9)
       net-http-pipeline
     gherkin (3.2.0)
     hashie (3.4.4)
@@ -120,7 +120,7 @@ GEM
     hitimes (1.2.4)
     httpclient (2.7.2)
     ipaddress (0.8.3)
-    json (1.8.3)
+    json (2.0.3)
     kitchen-docker (2.4.0)
       test-kitchen (>= 1.0.0)
     launchy (2.4.3)
@@ -143,7 +143,7 @@ GEM
     mixlib-shellout (2.2.6)
     mixlib-versioning (1.1.0)
     molinillo (0.4.5)
-    multi_json (1.11.3)
+    multi_json (1.12.1)
     multipart-post (2.0.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
@@ -264,7 +264,7 @@ GEM
     thor (0.19.1)
     timers (4.0.4)
       hitimes
-    travis (1.8.2)
+    travis (1.8.6)
       backports
       faraday (~> 0.9)
       faraday_middleware (~> 0.9, >= 0.9.1)
@@ -282,7 +282,7 @@ GEM
     varia_model (0.4.1)
       buff-extensions (~> 1.0)
       hashie (>= 2.0.2, < 4.0.0)
-    websocket (1.2.3)
+    websocket (1.2.4)
     wmi-lite (1.0.0)
     yajl-ruby (1.2.1)
 
@@ -298,7 +298,7 @@ DEPENDENCIES
   rake (~> 11.2.2)
   rubocop (~> 0.47.1)
   test-kitchen (~> 1.8.0)
-  travis (~> 1.8.2)
+  travis (~> 1.8.6)
 
 BUNDLED WITH
    1.12.1

@@ -186,7 +186,7 @@ GEM
       websocket (~> 1.0)
     rack (1.6.4)
     rainbow (2.1.0)
-    rake (11.1.2)
+    rake (11.2.2)
     retryable (2.0.3)
     ridley (4.5.0)
       addressable
@@ -295,7 +295,7 @@ DEPENDENCIES
   emeril (~> 0.8.0)
   foodcritic (~> 6.3.0)
   kitchen-docker (~> 2.4.0)
-  rake (~> 11.1.2)
+  rake (~> 11.2.2)
   rubocop (~> 0.40.0)
   test-kitchen (~> 1.8.0)
   travis (~> 1.8.2)

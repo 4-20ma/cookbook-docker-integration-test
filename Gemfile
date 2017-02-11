@@ -8,13 +8,13 @@ group :development do
 end # group
 
 group :test do
-  gem 'berkshelf', '~> 4.3.3'
-  gem 'chefspec', '~> 4.7.0'
-  gem 'foodcritic', '~> 6.3.0'
-  gem 'rubocop', '~> 0.40.0'
+  gem 'berkshelf', '~> 4.3.3'     # 5.6.2
+  gem 'chefspec', '~> 4.7.0'      # 5.4.0
+  gem 'foodcritic', '~> 6.3.0'    # 9.0.0
+  gem 'rubocop', '~> 0.47.1'
 end # group
 
 group :integration do
-  gem 'test-kitchen', '~> 1.8.0'
   gem 'kitchen-docker', '~> 2.4.0'
+  gem 'test-kitchen', '~> 1.8.0'
 end # group

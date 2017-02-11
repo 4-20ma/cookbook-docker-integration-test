@@ -9,8 +9,19 @@ AllCops:
     - spec/foodcritic/**/*
     - vendor/**/*
 
-EmptyLines:
+#------------------------------------------------------------------------ lint
+Lint/UnusedBlockArgument:
   Enabled: false
+
+#----------------------------------------------------------------------- style
+Style/EmptyLines:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
 
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
@@ -18,16 +29,14 @@ Style/HashSyntax:
 Style/SpaceBeforeFirstArg:
   Enabled: false
 
-Lint/UnusedBlockArgument:
-  Enabled: false
-
+#--------------------------------------------------------------------- metrics
 Metrics/AbcSize:
   Max: 19
+
+Metrics/BlockLength:
+  ExcludedMethods: namespace
 
 Metrics/LineLength:
   Exclude:
     - 'metadata.rb'
     - 'tasks/style.rb'
-
-Style/EmptyLinesAroundBlockBody:
-  Enabled: false

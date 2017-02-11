@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 group :development do
   gem 'emeril', '~> 0.8.0'
-  gem 'rake', '~> 11.2.2'
+  gem 'rake', '~> 12.0.0'
   gem 'travis', '~> 1.8.6'
 end # group
 

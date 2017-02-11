@@ -1,3 +1,18 @@
+1.2.0 / 2017-02-11
+------------------
+
+- `FIX` - Update RELEASE document | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/92ad99b)
+- `IMPROVE` - Update berkshelf to v5.6.2 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/a7a2c9d)
+- `IMPROVE` - Update chefspec to v5.4.0 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/8c03c6c)
+- `IMPROVE` - Update foodcritic to 9.0.0 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/3a39116)
+- `IMPROVE` - Update kitchen-docker to v2.6.0 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/10467e1)
+- `FIX` - Fix extra spacing cop | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/e4d7138)
+- `IMPROVE` - Update test-kitchen to v1.15.0 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/d5e4348)
+- `IMPROVE` - Update rake to v12.0.0 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/24b384f)
+- `IMPROVE` - Update travis to 1.8.6 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/c6c2b26)
+- `IMPROVE` - Update rubocop to 0.47.1 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/99823f4)
+- `IMPROVE` - Update rake to v11.2.2 | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/a365913)
+
 1.1.1 / 2016-05-16
 ------------------
 

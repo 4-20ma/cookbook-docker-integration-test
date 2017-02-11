@@ -7,7 +7,7 @@ Instructions for releasing this cookbook:
 - Ensure all tests pass
 
         $ rake
-        $ rake kitchen
+        $ rake integration
 
 - Update `CHANGELOG.md` with recent changes
 

@@ -4,4 +4,4 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  docker-integration-test (1.0.1)
+  docker-integration-test (1.2.0)

@@ -12,8 +12,8 @@ Cookbook - docker-integration-test
 Configuration
 -------------
 
-- OS X El Capitan version 10.11.4
-- Docker version 1.11.0, build 4dc5990 (Mac app 1.11.0-beta9)
+- macOS Sierra version 10.12.3
+- Docker version 1.13.1, build 092cba3 (Mac app 1.13.1-beta42)
 - Ruby 2.3.1 (via rbenv)
 
 
@@ -80,7 +80,7 @@ License & Authors
 - Author:: Doc Walker (<4-20ma@wvfans.net>)
 
 ````text
-Copyright 2016, Doc Walker
+Copyright 2016-2017, Doc Walker
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

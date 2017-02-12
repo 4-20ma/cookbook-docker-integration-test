@@ -2,8 +2,9 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'emeril', '~> 0.8.0'
+  # gem 'emeril', '~> 0.8.0'
   gem 'rake', '~> 12.0.0'
+  gem 'stove', '~> 4.1.1'
   gem 'travis', '~> 1.8.6'
 end # group
 

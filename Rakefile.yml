@@ -2,10 +2,6 @@
 changelog:
   git_repository: github.com/4-20ma
 
-release:
-  category: Other
-  publish_to_supermarket: true
-
 style:
   foodcritic:
     fail_tags:

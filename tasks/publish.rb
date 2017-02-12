@@ -1,10 +1,10 @@
 # encoding: utf-8
 #
-# Task:: release
+# Task:: publish
 #
 # Author:: Doc Walker (<4-20ma@wvfans.net>)
 #
-# Copyright 2016, Doc Walker
+# Copyright 2016-2017, Doc Walker
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,20 +21,16 @@
 
 require 'rake'
 
-#-------------------------------------------------------------- release/tagger
+#-------------------------------------------------------------- publish/tagger
+# Configure path to stove gem config file (add to ~/.bash_profile):
+# export STOVE_CONFIG=$HOME/.chef/stove.json
+
+# Update stove gem config file
+# $ stove login --username USERNAME --key ~/.chef/USERNAME.pem
+
 begin
-  release = @config.fetch('release')
-  require 'emeril/rake_tasks'
-  Emeril::RakeTasks.new do |t|
-    # turn on debug logging
-    t.config[:logger].level = :debug
-
-    # set a category for this cookbook
-    t.config[:category] = release['category']
-
-    # explicitly indicate whether to publish to chef supermarket
-    t.config[:publish_to_supermarket] = release['publish_to_supermarket']
-  end
+  require 'stove/rake_task'
+  Stove::RakeTask.new
 rescue LoadError, NameError
-  STDOUT.puts '[WARN] Emeril::RakeTasks not loaded'.yellow
+  STDOUT.puts '[WARN] Stove::RakeTask not loaded'.yellow
 end

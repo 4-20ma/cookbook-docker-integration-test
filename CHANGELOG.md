@@ -1,3 +1,8 @@
+1.3.0 / 2017-02-12
+------------------
+
+- `IMPROVE` - Replace emeril with stove | [view](https://github.com/4-20ma/cookbook-docker-integration-test/commit/d132989)
+
 1.2.0 / 2017-02-11
 ------------------
 
